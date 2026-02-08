@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J.C</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Eater&family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">JOIE | EMBARRAS | COLERE</div>
+    </nav>
+
+    <div class="bg-container">
+      <div class="bg-image active" id="bg-joie" style="background-image: url('/JOIE.png');"></div>
+      <div class="bg-image" id="bg-embarras" style="background-image: url('/EMBARRAS.jpeg');"></div>
+      <div class="bg-image" id="bg-colere" style="background-image: url('/COL.png');"></div>
+      <div class="color-overlay"></div>
+    </div>
+
+    <main class="scroller">
+      
+      <section class="emotion-section section-joie" data-color="#FFB000">
+        <canvas id="joy-canvas"></canvas>
+        <div class="main-content">
+          <h1 class="chelsea-market-regular">L'Euphorie Solaire</h1>
+        </div>
+      
+      </section>
+
+      <section class="emotion-section section-embarras" data-color="#FF5D00">
+        <div class="main-content">
+          <h1 class="eater-regular">Le Flou de l'Embarras</h1>
+        </div>
+       
+      </section>
+
+      <section class="emotion-section section-colere" data-color="#8A0303">
+        <div class="main-content">
+          <h1 class="new-rocker-regular">La Fureur Écarlate</h1>
+        </div>
+       
+      </section>
+
+      <footer class="mini-footer">
+        <button class="restart-btn new-rocker-regular">REINITIALISER</button>
+      </footer>
+    </main>
+
+    <audio id="audio-joie" src="/joie.mp3" loop></audio>
+    <audio id="audio-embarras" src="/embarras.mp3" loop></audio>
+    <audio id="audio-colere" src="/colere.mp3" loop></audio>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
